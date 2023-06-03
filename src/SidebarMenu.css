@@ -1,0 +1,35 @@
+html {
+  background-color: rgb(18, 0, 0);
+}
+
+.Center_Content {
+  margin: auto;
+  max-width: 960px;
+}
+
+.Product_Font {
+  font-family: "Dancing Script", cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+.SidebarMenu .SidebarMenu_NavItem {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.SidebarMenu .SidebarMenu_NavItem:hover {
+  background-color: rgb(167, 100, 6);
+  color: white;
+}/*# sourceMappingURL=SidebarMenu.css.map */

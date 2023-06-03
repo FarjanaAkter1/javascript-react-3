@@ -1,18 +1,16 @@
 import React from 'react'
 import './FoodPage.scss'
+import { FootTable } from '../FootTable'
 
 export const FoodPage = () => {
   return (
     <div className='FoodPage'>
        <div className='Center_Content'>
           <div className='FoodPage_Header'>
-                Food 
+                Foods 
             </div>
-            <div>
-                <br/>
-                Todo...
-                <br/>
-                <br/>
+            <div className='FoodPage_Content'>
+                <FootTable/>
             </div>
        </div>
     </div>

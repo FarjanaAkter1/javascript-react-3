@@ -1,0 +1,49 @@
+html {
+  background-color: rgb(18, 0, 0);
+}
+
+.Center_Content {
+  margin: auto;
+  max-width: 960px;
+}
+
+.Product_Font {
+  font-family: "Dancing Script", cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+.Footer {
+  background-color: rgb(18, 0, 0);
+  color: rgb(189, 189, 189);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer .Footer_Menu {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.Footer .Footer_Center {
+  padding-top: 22px;
+}
+.Footer .Footer_Social {
+  padding-top: 10px;
+  width: 250px;
+}
+.Footer .Footer_Social .icon {
+  margin: 20px;
+}
+@media screen and (max-width: 600px) {
+  .Footer .Footer_Menu {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=Footer.css.map */

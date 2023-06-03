@@ -1,6 +1,7 @@
 import React from 'react'
 import { formatUSD } from './Util/Money'
 import { getPriceForDrink } from './Util/App.Config'
+
 import './DrinkTableRow.scss'
 
 export const DrinkTableRow = ({displayName, item, theOrderedDrinks, onHandleClick}) => {

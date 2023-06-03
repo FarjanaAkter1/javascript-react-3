@@ -1,0 +1,44 @@
+html {
+  background-color: rgb(18, 0, 0);
+}
+
+.Center_Content {
+  margin: auto;
+  max-width: 960px;
+}
+
+.Product_Font {
+  font-family: "Dancing Script", cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+.OrderHistoryPage {
+  padding: 5px;
+  background-color: rgb(129, 103, 69);
+}
+.OrderHistoryPage .OrderHistoryPage_Header {
+  margin-top: 8px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  font-size: x-large;
+  font-size: 160%;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.OrderHistoryPage .OrderHistoryPage_Content {
+  margin-top: 8px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+}/*# sourceMappingURL=OrderHistoryPage.css.map */

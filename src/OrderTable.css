@@ -1,0 +1,16 @@
+.OrderTable {
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+}
+.OrderTable .OrderTable_Table {
+  width: 345px;
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.OrderTable .OrderTable_Table tr {
+  border: 1px solid black;
+}
+.OrderTable .OrderTable_Table tr td {
+  padding: 5px;
+}/*# sourceMappingURL=OrderTable.css.map */

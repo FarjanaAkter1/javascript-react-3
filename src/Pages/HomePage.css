@@ -1,0 +1,51 @@
+html {
+  background-color: rgb(18, 0, 0);
+}
+
+.Center_Content {
+  margin: auto;
+  max-width: 960px;
+}
+
+.Product_Font {
+  font-family: "Dancing Script", cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+.HomePage {
+  padding: 5px;
+  background-color: rgb(129, 103, 69);
+}
+.HomePage .HomePage_Header {
+  border-radius: 5px;
+  color: rgb(226, 226, 226);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: 200%;
+  font-family: "Hind Madurai", sans-serif;
+}
+.HomePage .HomePage_Band_Header {
+  color: rgb(226, 226, 226);
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+}
+.HomePage .HomePage_Band {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .HomePage .HomePage_Band_Header {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=HomePage.css.map */

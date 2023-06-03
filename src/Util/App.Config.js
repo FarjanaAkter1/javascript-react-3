@@ -5,6 +5,43 @@
 // Desc: All configuration options for the application.
 //
 
+export const foodPrices = [
+    { 
+        id: 1,
+        type: "hamburger",
+        price: 5.00 
+    },
+    { 
+        id: 2,
+        type: "pasta",
+        price: 10.00 
+    },
+    { 
+        id: 3,
+        type: "pizza",
+        price: 15.00 
+    },
+    {
+        id: 4,
+        type: "jerk_chicken",
+        price: 20.00 
+
+    },
+    {
+        id: 4,
+        type: "sushi",
+        price: 10.00 
+
+    } 
+
+]
+
+
+
+
+
+
+
 export const drinkPrices = [
     { 
         id: 1,
@@ -20,9 +57,19 @@ export const drinkPrices = [
         id: 3,
         type: "coffee",
         price: 3.00 
+    },
+    {
+        id: 4,
+        type: "milk",
+        price: 4.00 
+
     }
+
 ]
 
 export const getPriceForDrink = (type) => {
     return drinkPrices.find(p => p.type === type).price
+}
+export const getPriceForfoods = (type) => {
+    return foodPrices.find(p => p.type === type).price
 }

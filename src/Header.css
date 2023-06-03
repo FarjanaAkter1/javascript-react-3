@@ -1,0 +1,83 @@
+html {
+  background-color: rgb(18, 0, 0);
+}
+
+.Center_Content {
+  margin: auto;
+  max-width: 960px;
+}
+
+.Product_Font {
+  font-family: "Dancing Script", cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+.Header {
+  background: burlywood;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.Header .Header_header {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.Header .Header_Hamburger {
+  cursor: pointer;
+  margin-left: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 40px;
+}
+.Header .Header_Logo {
+  font-size: 200%;
+  padding-right: 10px;
+}
+.Header .Header_Logo_Area {
+  display: flex;
+}
+.Header .Header_Cart {
+  display: inline-block;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.Header .Header_Qty_Small {
+  color: white;
+  background-color: red;
+  position: relative;
+  left: -25px;
+  top: -3px;
+  padding-left: 6px;
+  font-size: smaller;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.Header .Header_Qty_Large {
+  color: white;
+  background-color: red;
+  position: relative;
+  left: -25px;
+  top: -3px;
+  padding-left: 1px;
+  font-size: smaller;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.Header div > div > img {
+  padding-top: 3px;
+  margin-left: 5px;
+}/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,31 @@
+html {
+  background-color: rgb(18, 0, 0);
+}
+
+.Center_Content {
+  margin: auto;
+  max-width: 960px;
+}
+
+.Product_Font {
+  font-family: "Dancing Script", cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+.SidebarContent {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(220, 190, 148);
+}
+.SidebarContent .SidebarContent_Checkout {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=SidebarContent.css.map */

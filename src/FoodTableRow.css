@@ -1,0 +1,44 @@
+tml {
+    background-color: rgb(18, 0, 0);
+  }
+  
+  .Center_Content {
+    margin: auto;
+    max-width: 960px;
+  }
+  
+  .Product_Font {
+    font-family: "Dancing Script", cursive;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: red;
+  }
+  
+  .FoodTableRow {
+    -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+    -moz-user-select: none;
+         user-select: none; /* Standard syntax */
+  }
+  .FoodTableRow .FoodTableRow_Button {
+    width: 55px;
+    height: 45px;
+    border: none;
+    margin-left: 5px;
+    border-radius: 2px;
+    color: rgb(213, 213, 213);
+    background-color: rgba(142, 65, 17, 0.819);
+  }
+  .FoodTableRow .FoodTableRow_OrderAmount {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }/*# sourceMappingURL=DrinkTableRow.css.map */

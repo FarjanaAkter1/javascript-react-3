@@ -1,0 +1,32 @@
+.OrderSection .OrderSection_Title {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.OrderSection .OrderSection_Table {
+  width: 345px;
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.OrderSection .OrderSection_Table tr {
+  border: 1px solid black;
+}
+.OrderSection .OrderSection_Table tr td {
+  align-items: right;
+  padding: 5px;
+}
+.OrderSection .OrderSection_Total {
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-right: 10px;
+  justify-content: right;
+}
+.OrderSection .OrderSection_Total span {
+  margin-left: 5px;
+  padding: 3px;
+  background-color: white;
+}/*# sourceMappingURL=OrderSection.css.map */

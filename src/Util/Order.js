@@ -9,7 +9,9 @@
 //       altering the cost of the product.
 //
 
-import { getPriceForDrink } from './App.Config'
+import { getPriceForDrink, getPriceForfoods } from './App.Config'
+
+
 
 /**
  * @param {*} drinks 
@@ -24,8 +26,9 @@ import { getPriceForDrink } from './App.Config'
     ] 
  */
 export const buildOrder = (drinks) => {
-    let total = 0
+    let drinksTotal = 0
     let arrayOfDrinks = Object.keys(drinks)
+    
 
     const arrayOfDrinkObjects = arrayOfDrinks.map(i => {
         return {
@@ -34,8 +37,10 @@ export const buildOrder = (drinks) => {
         }
     })
 
+
+    
     const allItems = arrayOfDrinkObjects.map(i => {
-        total += i.qty * getPriceForDrink(i.item)
+        drinksTotal += i.qty * getPriceForDrink(i.item)
         return {
             ...i,
             price: getPriceForDrink(i.item),
@@ -43,13 +48,66 @@ export const buildOrder = (drinks) => {
         }
     })
 
-    const order = allItems.filter(i => i.qty > 0)
+
+    const drinksOrder = allItems.filter(i => i.qty > 0)
 
     return {
-        order,
-        total
+        drinksOrder,
+        drinksTotal
     }
+
 }
+
+//////////////////////////////////////////////
+
+
+
+export const buildFoodOrder = (foods) => {
+    let foodsTotal = 0
+    let arrayOffoods = Object.keys(foods)
+    
+
+    const arrayOfFoodObjects = arrayOffoods.map(i => {
+        return {
+            item: i,
+            qty: foods[i]
+        }
+    })
+
+
+    
+    const allItems = arrayOfFoodObjects.map(i => {
+        foodsTotal += i.qty * getPriceForfoods(i.item)
+        return {
+            ...i,
+            price: getPriceForfoods(i.item),
+            subTotal: i.qty * getPriceForfoods(i.item)
+        }
+    })
+
+
+    const foodsOrder = allItems.filter(i => i.qty > 0)
+
+    return {
+        foodsOrder,
+        foodsTotal
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * @param {*} orders 
@@ -70,4 +128,173 @@ export const getTotalNumberDrinks = (drinks) => {
         totalDrinks += drinks[i]
     })
     return totalDrinks
+
+
 }
+
+
+export const getTotalNumberFoods = (foods) => {
+    let totalFoods = 0
+    const arrayOfFoods = Object.keys(foods)
+    arrayOfFoods.forEach(i => {
+        totalFoods += foods[i]
+    })
+    return totalFoods
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
+// import { getPriceForfoods } from './App.Config'
+
+
+
+// /**
+//  * @param {*} drinks 
+//  * @returns An array of objects that the customer has ordered.
+//  *  [
+//       { 
+//         item: 'tea', 
+//         qty: 1, 
+//         price: 2, 
+//         subTotal: 2
+//       }
+//     ] 
+//  */
+// export const buildOrder = (foods) => {
+//     let total = 0
+//     let arrayOfFoods = Object.keys(foods)
+    
+
+//     const arrayOfFoodObjects = arrayOfFoods.map(i => {
+//         return {
+//             item: i,
+//             qty: foods[i]
+//         }
+//     })
+
+
+    
+//     const allItems = arrayOfFoodObjects.map(i => {
+//         total += i.qty * getPriceForfoods(i.item)
+//         return {
+//             ...i,
+//             price: getPriceForfoods(i.item),
+//             subTotal: i.qty * getPriceForfoods(i.item)
+//         }
+//     })
+
+
+//     const order = allItems.filter(i => i.qty > 0)
+
+//     return {
+//         order,
+//         total
+//     }
+
+
+
+// }
+
+// /**
+//  * @param {*} orders 
+//  * @returns The total amount of all the orders.
+//  */
+// export const calcTotalForAllOrders = (orders) => {
+//     return (orders) ? orders.map(i => i.total).reduce((a,b)=> a + b, 0) : 0
+// }
+
+// /**
+//  * @param {} drinks 
+//  * @returns The total number of drinks the customer has ordered.
+//  */
+// export const getTotalNumberFoods = (foods) => {
+//     let totalFoods = 0
+//     const arrayOfFoods = Object.keys(foods)
+//     arrayOfFoods.forEach(i => {
+//         totalDrinks += foods[i]
+//     })
+//     return totalFoods
+// }

@@ -12,6 +12,7 @@ export const DrinkPage = () => {
                 </div>
                 <div className='DrinkPage_Content'>
                     <DrinksTable />
+                    
                 </div>
                 <div className='DrinkPage_Content'>
                     <div className='DrinkPage_Pix'>
